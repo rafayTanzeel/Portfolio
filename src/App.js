@@ -91,7 +91,7 @@ class App extends Component {
         drawerTitle="Settings"
         toolbarTitle="Rafay Tanzeel"
         navItems={this.navItems}
-        mobileDrawerType={NavigationDrawer.DrawerTypes.TEMPORARY_MINI}
+        mobileDrawerType={NavigationDrawer.DrawerTypes.TEMPORARY}
         tabletDrawerType={NavigationDrawer.DrawerTypes.PERSISTENT_MINI}
         desktopDrawerType={NavigationDrawer.DrawerTypes.PERSISTENT_MINI}
         footer={footer}

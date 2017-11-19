@@ -1,0 +1,17 @@
+@import '../globals';
+// @import 'react-md/src/scss/react-md';
+
+
+.tabs__page-layout {
+    // @include react-md-theme-colors($md-blue-500, $md-pink-a-200, false);        
+    @include react-md-theme-colors($md-blue-500);
+    // @include react-md-theme-tabs($md-lime-500);
+}
+
+.chips{
+    margin: 7px;
+}
+
+.gitref {
+    margin-top: 20px;
+}

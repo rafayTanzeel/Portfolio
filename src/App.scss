@@ -1,0 +1,17 @@
+@import 'globals';
+
+.footer{
+    background-color: $md-blue-grey-800;
+    color: white;
+    text-align: center;
+    margin: 0;
+}
+
+.md-icon.fa {
+    height: $md-font-icon-size;
+    width: $md-font-icon-size;
+}
+
+.loader{
+    height: 100vh;
+}

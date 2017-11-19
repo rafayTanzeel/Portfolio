@@ -1,0 +1,44 @@
+@import '../globals';
+
+  
+  .timeline-outer {
+    width: 95%;
+    margin: 0 auto;
+  }
+  
+  
+  .timeline {
+    border-left: 8px solid $md-secondary-color;
+    border-bottom-right-radius: 2px;
+    border-top-right-radius: 2px;
+    position: relative;
+  }
+
+  
+  .timeline .event {
+    position: relative;
+  }
+  
+  .timeline .event:last-of-type {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border: none;
+  }
+  
+  .timeline .event:before,
+  .timeline .event:after {
+    position: absolute;
+    display: block;
+    top: 2px;
+  }
+ 
+  .timeline .event:after {
+    box-shadow: 0 0 0 8px $md-blue-500;
+    left: -9px;
+    background: black;
+    border-radius: 4px;
+    height: 11px;
+    width: 11px;
+    content: "";
+    top: 35px;
+  }

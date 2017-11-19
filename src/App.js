@@ -96,7 +96,7 @@ class App extends Component {
         desktopDrawerType={NavigationDrawer.DrawerTypes.PERSISTENT_MINI}
         footer={footer}
       >
-        {this.state.loading ? <CircularProgress className="loader"/>
+        {this.state.loading ? <CircularProgress id="cprogress" aria-describedby="loading page" aria-busy className="loader"/>
         : <section className={sectionClass}>
           {display}
         </section>}

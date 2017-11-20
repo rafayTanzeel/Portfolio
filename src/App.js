@@ -35,6 +35,13 @@ class App extends Component {
       key: inboxListItems[0].key,
       loading: true
     };
+    
+    console.log("୧༼ ͡◉ل͜ ͡◉༽୨");
+    console.log("Hello!!");
+    console.log("Don't waste your time digging through minified code");
+    console.log("Just pm me at rafatanzeel@gmail.com");
+    console.log("I will give you the source code");
+    console.log("Have a nice day. Cheers");
   }
 
   setPage = (key) => {
@@ -89,7 +96,7 @@ class App extends Component {
 
 
     const footer = <h4 className="footer">&copy; Rafay Tanzeel {new Date().getFullYear()}</h4>
-    
+
     return (
       <NavigationDrawer
         drawerTitle="Settings"

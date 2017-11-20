@@ -1,7 +1,7 @@
 import React from 'react';
 
-import {TEAM_UP, EARTH_GRAPHiCS, JAVACRIPT_PROFILER, RAFAY_RECIPE} from './WebProjects';
 import VerticalTimeline from '../../VerticalTimeline/VerticalTimeline';
+import {TEAM_UP, EARTH_GRAPHiCS, JAVACRIPT_PROFILER, RAFAY_RECIPE} from './WebProjects';
 
 import {
     Card,

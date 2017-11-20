@@ -1,16 +1,13 @@
 import React, { Component } from 'react';
-import { NavigationDrawer } from 'react-md';
+import { NavigationDrawer, CircularProgress } from 'react-md';
 
 import './App.css';
+
 import Profile from './Profile/Profile';
 import Work from './Work/Work';
 import Skills from './Skills/Skills';
 import Projects from './Projects/Projects';
-
-
 import inboxListItems from './Helper/NavListItems';
-
-import { CircularProgress } from 'react-md';
 
 class App extends Component {
 

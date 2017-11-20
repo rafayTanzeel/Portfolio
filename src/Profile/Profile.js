@@ -144,17 +144,17 @@ const profile = () => {
                         <ListItem
                             primaryText="HoloJam Hackathon"
                             secondaryText="1st Place"
-                            leftIcon={<FontIcon>star</FontIcon>}
+                            leftIcon={<FontIcon>grade</FontIcon>}
                         />
                         <ListItem
                             primaryText="WICS & WEG Hackathon"
                             secondaryText="2nd Place"
-                            leftIcon={<FontIcon>star</FontIcon>}
+                            leftIcon={<FontIcon>grade</FontIcon>}
                         />
                         <ListItem
                             primaryText="SFU Software Engineer Inter-Class Competition"
                             secondaryText="3rd Place"
-                            leftIcon={<FontIcon>star</FontIcon>}
+                            leftIcon={<FontIcon>grade</FontIcon>}
                         />
                     </List>
                 </CardText>

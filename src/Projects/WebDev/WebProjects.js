@@ -10,6 +10,7 @@ import {
 
 const bulletpoint = <FontIcon key="data">keyboard_arrow_right</FontIcon>;
 const GitBtnRef = ({url}) => <Button flat secondary iconClassName="fa fa-github" target="_blank" rel="noopener noreferrer" href={url} className="gitref">github</Button>;
+const WebBtnRef = ({url}) => <Button flat secondary iconChildren="http" target="_blank" rel="noopener noreferrer" href={url} className="gitref">link</Button>;
 const ChipGenerator = ({chips}) => (
     <div>
         {chips.map((chip, idx) => <Chip key={idx} className="chips" label={chip} />)}
@@ -35,6 +36,7 @@ export const TEAM_UP = {
             <h4>Libraries:</h4>
             <ChipGenerator chips={["Node.js", "Express.js", "MongoDB", "Socket.IO", "Nginx", "Webpack", "Babel", "Google Maps and Places API"]}/>
             <GitBtnRef url="https://github.com/rafayTanzeel/Team_Up"/>
+            <WebBtnRef url="https://team-ups.herokuapp.com/"/>
         </article>
     )
 };
@@ -52,6 +54,7 @@ export const EARTH_GRAPHiCS = {
             <h4>Libraries:</h4>
             <ChipGenerator chips={["Node.js", "Express.js", "Three.js", "WebGL"]}/>
             <GitBtnRef url="https://github.com/rafayTanzeel/3D-Earth-Demo"/>
+            <WebBtnRef url="https://three-d-web-earth.herokuapp.com/"/>
         </article>
     )
 };
@@ -93,6 +96,7 @@ export const RAFAY_RECIPE = {
             <h4>Libraries:</h4>
             <ChipGenerator chips={["Node.js", "Express.js", "Foundation", "Nginx"]}/>
             <GitBtnRef url="https://github.com/rafayTanzeel/Recipes"/>
+            <WebBtnRef url="https://rafay-recipe.herokuapp.com/"/>
         </article>
     )
 };

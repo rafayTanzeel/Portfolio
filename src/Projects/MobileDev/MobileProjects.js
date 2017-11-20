@@ -10,6 +10,7 @@ import {
 
 const bulletpoint = <FontIcon key="data">keyboard_arrow_right</FontIcon>;
 const GitBtnRef = ({url}) => <Button flat secondary iconClassName="fa fa-github" target="_blank" rel="noopener noreferrer" href={url} className="gitref">github</Button>;
+const YouTubeBtnRef = ({url}) => <Button flat secondary iconClassName="fa fa-youtube-play" target="_blank" rel="noopener noreferrer" href={url} className="gitref">youtube</Button>;
 
 
 export const VISUAL_ASSISTANCE = {
@@ -102,6 +103,7 @@ export const VISION_TRANSLATOR = {
                 <Chip className="chips" label="Butter Knife" />
             </div>
             <GitBtnRef url="https://github.com/rafayTanzeel/Vision_Translator"/>
+            <YouTubeBtnRef url="https://youtu.be/hTa-kIYbe70"/>
         </article>
     )
 };
@@ -194,6 +196,7 @@ export const SFU_ONCAMPUS = {
                 <Chip className="chips" label="Xcode" />
             </div>
             <GitBtnRef url="https://github.com/rafayTanzeel/sfu-oncampus"/>
+            <YouTubeBtnRef url="https://youtu.be/YK2mdYT-kS4"/>
         </article>
     )
 };

@@ -11,6 +11,8 @@ import {
 
 const bulletpoint = <FontIcon key="data">keyboard_arrow_right</FontIcon>;
 const GitBtnRef = ({url}) => <Button flat secondary iconClassName="fa fa-github" target="_blank" rel="noopener noreferrer" href={url} className="gitref">github</Button>;
+const YouTubeBtnRef = ({url}) => <Button flat secondary iconClassName="fa fa-youtube-play" target="_blank" rel="noopener noreferrer" href={url} className="gitref">youtube</Button>;
+
 const ChipGenerator = ({chips}) => (
     <div>
         {chips.map((chip, idx) => <Chip key={idx} className="chips" label={chip} />)}
@@ -56,7 +58,8 @@ export const WEATHER_DESCRIPTOR = {
             <br/>
             <h4>Libraries:</h4>
             <ChipGenerator chips={["Python2.x", "Numpy", "Pandas", "Scikit Learn"]}/>
-            <GitBtnRef url="https://github.com/rafayTanzeel/Grim-Reaper-Trap-Game"/>
+            <br/>
+            <h6> Reference: Available upon Request as I used 3rd party licensed images</h6>
         </article>
     )
 };
@@ -78,7 +81,7 @@ export const ROBOT_BATTLE_CAR = {
             </List>
             <h4>Libraries:</h4>
             <ChipGenerator chips={["C", "Lego Mindstorm ev3"]}/>
-            <GitBtnRef url="https://www.youtube.com/watch?v=E45EGAFlc8w"/>
+            <YouTubeBtnRef url="https://youtu.be/E45EGAFlc8w"/>
         </article>
     )
 };

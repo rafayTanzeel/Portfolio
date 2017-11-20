@@ -10,7 +10,6 @@ import Misc from './Misc/Misc'
 const skills = (props) => (
   <TabsContainer panelClassName="md-grid" colored themed className="tabs__page-layout">
     <Tabs tabId="simple-tab" centered>
-
       <Tab label="Mobile Dev">
         <MobileDev/>
       </Tab>
@@ -23,7 +22,6 @@ const skills = (props) => (
       <Tab label="Misc">
         <Misc/>
       </Tab>
-
     </Tabs>
   </TabsContainer>
 );

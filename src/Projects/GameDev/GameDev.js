@@ -1,7 +1,7 @@
 import React from 'react';
 
-import {GRIM_REAPER_TRAP} from './GameProjects';
 import VerticalTimeline from '../../VerticalTimeline/VerticalTimeline';
+import {GRIM_REAPER_TRAP} from './GameProjects';
 
 import {
     Card,

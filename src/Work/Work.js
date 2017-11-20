@@ -42,19 +42,20 @@ const work = () => (
             <CardText>
                 <h5>About Visier</h5>
                 <p>
-                    Visier is a phenomenal company that have a very googlish like structure.
+                    Visier is a phenomenal company with a very googlish like structure.
                     Initiation of new employees was followed by a series of orientations and small training
                     program to get the new employees up and running quickly.
                 </p>
                 <p>
                     This training program included a bunch of presentations delivered by senior developers 
-                    to give a sense of companies bussiness model and overal software architecture. Employees also
-                    underwent a scala and javascript certifications, core technologies used by the company.
+                    to give a sense of company’s business model and overall software architecture. Employees also 
+                    underwent a Scala and JavaScript certifications, core technologies used by the company.
                 </p>
                 <p>
-                    I was part of a team of 11 developers, who were not just my collegues but my close friends.
-                    I worked closely with senior software developer to perform regression and automation performance
-                    analysis, heap dump map.
+                    I was part of a team of 11 developers, and we collaborated with each other to help improve Visier's product. 
+                    I worked closely with senior software developer to perform regression and automation performance 
+                    analysis, heap dump analysis of garbage collection to find memory leaks, extensive memory profiling and writing scripts in Scala 
+                    to improve the regression testing workflow of the Visier Cloud Application.
                 </p>
             </CardText>
         </Card>

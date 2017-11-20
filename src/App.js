@@ -39,7 +39,7 @@ class App extends Component {
     console.log("୧༼ ͡◉ل͜ ͡◉༽୨");
     console.log("Hello!!");
     console.log("Don't waste your time digging through minified code");
-    console.log("Just pm me at rafatanzeel@gmail.com");
+    console.log("Just pm me at rafaytanzeel@gmail.com");
     console.log("I will give you the source code");
     console.log("Have a nice day. Cheers");
   }

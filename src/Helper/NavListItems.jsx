@@ -7,12 +7,16 @@ export default [{
   leftIcon: <FontIcon>face</FontIcon>,
   active: true
 }, {
+  key: 'skills',
+  primaryText: 'Skills',
+  leftIcon: <FontIcon>code</FontIcon>,
+}, { key: 'divider', divider: true }, {
   key: 'work',
   primaryText: 'Experience',
   leftIcon: <FontIcon>work</FontIcon>,
 }, {
-  key: 'skills',
-  primaryText: 'Skills',
+  key: 'projects',
+  primaryText: 'Projects',
   leftIcon: <FontIcon>build</FontIcon>,
 }, { key: 'divider', divider: true }, {
   key: 'github',
@@ -33,9 +37,5 @@ export default [{
 //   key: 'home',
 //   primaryText: 'Home',
 //   leftIcon: <FontIcon>home</FontIcon>,
-  
-// }, {
-//   key: 'code',
-//   primaryText: 'Code Skills',
-//   leftIcon: <FontIcon>code</FontIcon>,
-// }, 
+// }
+

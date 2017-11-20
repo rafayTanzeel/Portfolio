@@ -5,6 +5,8 @@ import './App.css';
 import Profile from './Profile/Profile';
 import Work from './Work/Work';
 import Skills from './Skills/Skills';
+import Projects from './Projects/Projects';
+
 
 import inboxListItems from './Helper/NavListItems';
 
@@ -73,12 +75,15 @@ class App extends Component {
       case 'profile':
         display = <Profile/>;
         break; 
+      case 'skills':
+        display = <Skills/>;
+        break;
       case 'work':
         display = <Work/>;
-          break;
-      case 'skills':
+        break;
+      case 'projects':
         sectionClass=""
-        display = <Skills/>;
+        display = <Projects/>;
         break;
       default:
         sectionClass="md-grid"

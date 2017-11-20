@@ -8,7 +8,7 @@ import {
 } from 'react-md';
 
 const skillList = (props) => (
-    <ExpansionPanel label={props.title} footer={null}>
+    <ExpansionPanel focused={props.focused} columnWidths={props.columnWidths} label={props.title} footer={null}>
         {props.skills.map((skill, idx) => <Chip key={idx} className="chips" label={skill}/>)}
     </ExpansionPanel>
 );

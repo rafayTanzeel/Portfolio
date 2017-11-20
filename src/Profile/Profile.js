@@ -1,6 +1,7 @@
 import React from 'react';
 import { FontIcon } from 'react-md';
 import rafay from '../assets/rafay.jpg';
+import {Radar} from 'react-chartjs-2';
 
 import {
   Avatar,
@@ -12,43 +13,79 @@ import {
   ListItem
 } from 'react-md';
 
+const cardFlex= {
+    flex: 1
+};
+
 const styleCol1 = { 
-    flex: 2
+    flex: 3,
+    display: 'flex',
+    flexDirection: 'column'
 };
 
 const styleCol2 = {
-    flex: 5,
+    flex: 4,
+    display: 'flex',
+    flexDirection: 'column'
 };
 
-// "https://avatars0.githubusercontent.com/u/11380870?s=600&u=3bc83ad3cd2409b42128548716bd1df601a1f0bf&v=4"
+const styleCol3 = {
+    display: 'flex',
+    flexDirection: 'column',
+    flex: 4,
+};
 
-const profile = () => (
-    <Card className="md-cell md-cell--12">
+const profile = () => {
+
+    const chartData = {
+        labels: ["Web Dev", "Game Dev", "Algorithms", "Mobile Dev", "UX Design"],
+        datasets: [{
+          label: 'Concentration',
+          data: [4, 2, 3, 4, 2],
+          backgroundColor: "#ff408170",
+          borderColor: "#ff4081ab"
+        }]
+      };
+
+      const options = {
+        // responsive: true,
+        maintainAspectRatio: true,
+        scale: {
+            ticks: {
+                beginAtZero: true,
+                max: 5
+            }
+        }
+    };
+
+
+    return (<Card className="md-cell md-cell--12">
         <CardTitle title="Profile"/>
 
         <div className="md-grid">
-        
-        <Card style={styleCol1} className="md-cell md-cell--6 md-cell--8-tablet">
-            <CardTitle
-            title="Rafay Tanzeel"
-            subtitle="Software Engineer"
-            avatar={<Avatar suffix="red">R</Avatar>}
-            />
-            <Media aspectRatio="1-1">
-                <img src={rafay} alt="Nature from lorempixel" />
-            </Media>
-            <CardText>
-                <h5>About Me</h5>
-                <p>
-                    I am a full-stack web and mobile engineer with a passion for innovation and building scalable applications, 
-                    which incorporate design, functionality as well as usability across devices and browsers.
-                </p>
-                <p>Occasionally, I am also a hobbyist designer and artist.</p>
-            </CardText>
-        </Card>
+        <div  style={styleCol1} className="md-cell md-cell--6 md-cell--8-tablet">
 
-        <div  style={styleCol2} className="md-cell md-cell--6 md-cell--8-tablet">
-            <Card>
+            <Card style={cardFlex}>
+                <CardTitle
+                title="Rafay Tanzeel"
+                subtitle="Software Engineer"
+                avatar={<Avatar suffix="red">R</Avatar>}
+                />
+                <Media aspectRatio="1-1">
+                    <img src={rafay} alt="Nature from lorempixel" />
+                </Media>
+                <CardText>
+                    <h5>About Me</h5>
+                    <p>
+                        I am a full-stack web and mobile engineer with a passion for innovation and building scalable applications, 
+                        which incorporate design, functionality as well as usability across devices and browsers.
+                    </p>
+                    <p>Occasionally, I am also a hobbyist designer and artist.</p>
+                </CardText>
+            </Card>
+        </div>
+        <div  style={styleCol2} className="md-cell md-cell--4 md-cell--5-tablet">
+            <Card style={cardFlex}>
                 <CardTitle title="Contact" subtitle="Availability" />
                 <CardText>
                     <List>
@@ -70,7 +107,7 @@ const profile = () => (
                     </List>
                 </CardText>
             </Card>
-            <Card>
+            <Card style={cardFlex}>
                 <CardTitle title="Education" subtitle="BSc in Computer Science" />
                 <CardText>
                     <List>
@@ -93,8 +130,38 @@ const profile = () => (
                 </CardText>
             </Card>
         </div>
+        <div  style={styleCol3} className="md-cell md-cell--2 md-cell--3-tablet">
+            <Card style={cardFlex}>
+                <CardTitle title="Interest" subtitle="Hobbies" />
+                <CardText>
+                    <Radar data={chartData} options={options}/>
+                </CardText>
+            </Card>
+            <Card style={cardFlex}>
+                <CardTitle title="Achievements" subtitle="Awards" />
+                <CardText>
+                    <List>
+                        <ListItem
+                            primaryText="HoloJam Hackathon"
+                            secondaryText="1st"
+                            leftIcon={<FontIcon>star</FontIcon>}
+                        />
+                        <ListItem
+                            primaryText="WICS & WEG Hackathon"
+                            secondaryText="2nd"
+                            leftIcon={<FontIcon>star</FontIcon>}
+                        />
+                        <ListItem
+                            primaryText="SFU Software Engineer Inter-Class Competition"
+                            secondaryText="3rd"
+                            leftIcon={<FontIcon>star</FontIcon>}
+                        />
+                    </List>
+                </CardText>
+            </Card>
         </div>
-    </Card>
-);
+        </div>
+    </Card>)
+};
 
 export default profile;

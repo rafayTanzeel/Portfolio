@@ -43,6 +43,8 @@ class App extends Component {
       if (item.divider && ['github', 'linkedin', 'send-mail'].includes(key)) {
         return item;
       }
+      document.documentElement.scrollTop = 0;
+      document.body.scrollTop = 0;
       return { ...item, active: item.key === key };
     });
 

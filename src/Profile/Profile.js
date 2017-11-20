@@ -41,7 +41,7 @@ const profile = () => {
         labels: ["Web Dev", "Game Dev", "Algorithms", "Mobile Dev", "UX Design"],
         datasets: [{
           label: 'Concentration',
-          data: [4, 2, 3, 4, 2],
+          data: [4, 2, 3, 4, 3],
           backgroundColor: "#ff408170",
           borderColor: "#ff4081ab"
         }]
@@ -143,17 +143,17 @@ const profile = () => {
                     <List>
                         <ListItem
                             primaryText="HoloJam Hackathon"
-                            secondaryText="1st"
+                            secondaryText="1st Place"
                             leftIcon={<FontIcon>star</FontIcon>}
                         />
                         <ListItem
                             primaryText="WICS & WEG Hackathon"
-                            secondaryText="2nd"
+                            secondaryText="2nd Place"
                             leftIcon={<FontIcon>star</FontIcon>}
                         />
                         <ListItem
                             primaryText="SFU Software Engineer Inter-Class Competition"
-                            secondaryText="3rd"
+                            secondaryText="3rd Place"
                             leftIcon={<FontIcon>star</FontIcon>}
                         />
                     </List>
